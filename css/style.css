@@ -1,0 +1,95 @@
+/* ************ reset css start */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* ************ reset css end */
+/* ************ common css start */
+:root{
+    --white : #fff;
+    --black : #000;
+    --secendary-color: #FFC178;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+/* ************ common css end */
+/* navbar start */
+nav{
+    position: absolute;
+    width: 100%;
+    top: 28px;
+}
+.nav__logo,.main-menu{
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+}
+.main-menu{
+    justify-content: end;
+}
+.main-menu ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.main-menu ul li a{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+    transition: .3s all ease;
+    text-transform: capitalize;
+}
+.main-menu ul li a:hover, .main-menu ul li:first-child{
+    color: var(--black);
+}
+/* navbar end */
+/* banner start */
+.banner{
+    background: url("../img/banner.webp") no-repeat center center;
+    background-size: cover;
+}
+.banner .banner-overlay{
+    height: 100%;
+    background: linear-gradient(292.44deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.46) 100.34%), linear-gradient(189.65deg, rgba(0, 0, 0, 0) 77.8%, rgba(0, 0, 0, 0.18) 92.74%);
+}
+.banner .banner-content{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+.banner .banner-box p{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    color: var(--secendary-color);
+}
+.banner .banner-box h2{
+    text-transform: capitalize;
+    font-size: 88px;
+    line-height: 100px;
+    font-weight: 400;
+    letter-spacing: 7px;
+    color: var(--white);
+}
+.banner .banner-box h2 span{
+    font-weight: 700;
+    display: block;
+}
+
+/* banner end */
